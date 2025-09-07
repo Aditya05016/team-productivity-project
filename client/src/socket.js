@@ -2,7 +2,7 @@
 import { io } from "socket.io-client";
 
 // Connect to your backend server
-const socket = io("http://localhost:5000", {
+const socket = io("https://team-productivity-project.onrender.com", {
   transports: ["websocket"], // makes connection faster & reliable
   reconnectionAttempts: 5,   // retry up to 5 times
   reconnectionDelay: 1000,   // wait 1s before retry
